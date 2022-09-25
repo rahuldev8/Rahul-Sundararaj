@@ -1,8 +1,8 @@
-const express = require('express');
-const env = require('dotenv');
-const app = express();
-const bodyParser = require('body-parser');
-const mongoose = require('mongoose');
+const express = require('express'); //importing express framework
+const env = require('dotenv'); //importing .env for to load variables
+const app = express(); //creating an app using express
+const bodyParser = require('body-parser'); //importing bodyparser as a middleware
+const mongoose = require('mongoose'); //importing mongoose (a data modelling library)
 
 
 //importing Routes
@@ -25,6 +25,7 @@ app.use(express.json());
 
 app.use('/api', Userroutes)
 
+//used to find the current port Number the site is running #2000
 app.listen(process.env.PORT, () => {
     console.log(`Server is Currently running on port ${process.env.PORT}`);
  });

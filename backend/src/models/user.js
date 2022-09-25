@@ -1,6 +1,8 @@
+//importing mongoose and bcrypt for database and password encrypting Respectively
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 
+//Design for new user Database(user details)
 const userSchema = new mongoose.Schema({
     firstName:{
         type: String,
@@ -43,6 +45,7 @@ const userSchema = new mongoose.Schema({
     role:{
         type: String,
         enum: ['user','admin'],
+        //all users are default are users, not admin or super admins
         default: 'user'
     },
 
@@ -67,4 +70,6 @@ userSchema.methods = {
     }
 }
 
+
+//Exporting userschema as module to Mongoose
 module.exports = mongoose.model('User',userSchema);
