@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 
 const userSchema = new mongoose.Schema({
-    firstName :{
+    firstName:{
         type: String,
         required: true,
         trim: true,
@@ -10,7 +10,7 @@ const userSchema = new mongoose.Schema({
         max:25
     },
 
-    LastName :{
+    lastName:{
         type: String,
         required: true,
         trim: true,
@@ -18,7 +18,7 @@ const userSchema = new mongoose.Schema({
         max:25
     },
 
-    username :{
+    username:{
         type: String,
         required: true,
         trim: true,
@@ -27,7 +27,7 @@ const userSchema = new mongoose.Schema({
         lowercase : true
     },
 
-    email :{
+    email:{
         type: String,
         required: true,
         trim: true,
@@ -35,25 +35,25 @@ const userSchema = new mongoose.Schema({
         lowercase: true
     },
 
-    hash_password :{
+    hash_password:{
         type: String,
         required: true,
     },
 
-    role :{
+    role:{
         type: String,
         enum: ['user','admin'],
-        default: 'admin'
+        default: 'user'
     },
 
     Contact_Number: {
         type: String
     },
 
-    Profile_Picture :{
+    Profile_Picture:{
         type: String
     }
-},{timeStamp : true});
+},{timestamps  : true});
 
 userSchema.virtual('password')
 .set(function(password)
@@ -62,7 +62,7 @@ userSchema.virtual('password')
 });
 
 userSchema.methods = {
-    authenticate: function(){
+    authenticate: function(password){
         return bcrypt.compareSync(password, this.hash_password);
     }
 }

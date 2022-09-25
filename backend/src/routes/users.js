@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const User = require('../models/user');
+const mongoose = require('mongoose');
 
 
 
@@ -10,8 +11,9 @@ router.post('/signin',(req,res) =>
 });
 
 router.post('/signup',(req,res) =>
-{
-    User.findone({email : req.body.email})
+{ 
+
+    User.findOne({ email : req.body.email })
     .exec((error, user) =>
     {
         if(user) return res.status(400).json({
@@ -19,15 +21,15 @@ router.post('/signup',(req,res) =>
         });
 
         const{
-            firstname,
-            lastname,
+            firstName,
+            lastName,
             email,
             password
         } = req.body;
 
         const _user = new User({
-            firstname,
-            lastname,
+            firstName,
+            lastName,
             email,
             password,
             username: Math.random().toString()
