@@ -13,6 +13,9 @@ const { signup,signin } = require('../controller/auth');
 router.post('/signup',signup);
 
 //when the url has /signin, then it calls signin method
-router.post('/signin',signin);
+router.post('/signin',(req, res) =>
+{
+    
+});
 
 module.exports = router;
