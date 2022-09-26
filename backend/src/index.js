@@ -5,8 +5,8 @@ const bodyParser = require('body-parser'); //importing bodyparser as a middlewar
 const mongoose = require('mongoose'); //importing mongoose (a data modelling library)
 
 
-//importing Routes
-const Userroutes = require('./routes/users');
+//importing authenticataion Routes
+const authroutes = require('./routes/auth');
 
 
 //Environment variables or Constants passed
@@ -23,7 +23,7 @@ mongoose.connect(
 
 app.use(express.json());
 
-app.use('/api', Userroutes)
+app.use('/api', authroutes)
 
 //used to find the current port Number the site is running #2000
 app.listen(process.env.PORT, () => {

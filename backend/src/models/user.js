@@ -64,11 +64,20 @@ userSchema.virtual('password')
     this.hash_password = bcrypt.hashSync(password, 10);
 });
 
+//This authenticate function takes currently typed password as input ans compare it with existing
+//available hash password
 userSchema.methods = {
     authenticate: function(password){
         return bcrypt.compareSync(password, this.hash_password);
     }
 }
+
+//A virtual function, which concates firstname and last name,
+// returns the value called fullName
+userSchema.virtual('fullName')
+.get(function(){
+    return `${this.firstName} ${this.lastName}`;
+});
 
 
 //Exporting userschema as module to Mongoose
