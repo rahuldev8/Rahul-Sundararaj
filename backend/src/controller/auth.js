@@ -76,7 +76,7 @@ exports.signin = (req, res) => {
             else
             {
                 return res.status(400).json({
-                    messgae: 'Incorrect Username or Password'
+                    messgae: 'Incorrect Username or Password '
                 })
             }
         }
