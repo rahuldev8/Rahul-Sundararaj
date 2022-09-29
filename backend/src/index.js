@@ -17,7 +17,7 @@ env.config();
 mongoose.connect(
     `mongodb+srv://${process.env.MANGO_DB_USER}:${process.env.MANGO_DB_PASSWORD}@supreme-cluster.qlbkopm.mongodb.net/${process.env.MANGO_DB_DATABASE}?retryWrites=true&w=majority`
 ).then(() => {
-   console.log('Database Connected Successfully');
+   console.log('Database Connected Successfully ');
 });
 
 
