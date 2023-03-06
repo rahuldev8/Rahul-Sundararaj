@@ -440,7 +440,7 @@ img {
 
 /*==================== ABOUT ====================*/
 .about_img{
-  width: 200px;
+  width: 260px;
   border-radius: .5rem;
   justify-self: center;
   align-self: center;
@@ -589,6 +589,7 @@ img {
   overflow: hidden;
 }
 
+
 .skills_open .skills_list{
   height: max-content;
   margin-bottom: var(--mb-2-5);
@@ -670,7 +671,7 @@ img {
 /*==================== SERVICES ====================*/
 .services_container{
   gap: 1.5rem;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, fr);
 }
 
 .services_content{
@@ -1117,7 +1118,7 @@ img {
 @media screen and (min-width:568px){
   .home_container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: fr fr;
     gap: 30px;
     padding-top: .5rem;
   }
@@ -1458,4 +1459,11 @@ img {
   padding-left: 11%;
   zoom: 180%;
 }
+
+.footer_egg{
+  position: absolute;
+  padding-left: 75%;
+  zoom: 240%;
+}
+
 
