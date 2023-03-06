@@ -1,144 +1,816 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Rahul's Portfolio</title>
-  <link rel="icon" href="Image/engineer.ico">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  
-  <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-</head>
-<body class="container-fluid body_section">
-        <header>
-              <nav class="navbar navbar-expand-lg navbar-light ">
-                <a class="navbar-brand brand-name" href="#">Rahul Sundararaj</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/x-icon" href="assets\img\favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/d6263aa68b.js" crossorigin="anonymous"></script>
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
         
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                      <a class="nav-link headerachor" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link headerachor" href="Education.html">Education</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link headerachor" href="skill.html">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link headerachor" href="Project.html">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link headerachor" href="contact.html">Contact Me</a>
-                    </li>
-                  </ul>
-              </nav>
-          </header>
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <!-- =======================header icon======================= -->
+        <link rel="icon" href="/assets/img/header img.png">
+        <title>Rahul Sundararaj</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
 
-          <section id = "Home">
-              <div class="row column1">
-                <div class="col-lg-6 col-md-6 first-image">
-                    <img class = "boyimage" src="Image/20200630_162659.gif" alt="">
-                </div>  
-                  <div class="col-lg-6 section-1">
-                      <h1 class = "Hello">Hello All ! I'm Rahul <span class="wave">👋</span></h1>
-                      <p>An Undergraduate Student and Developer having
-                        an Passion for building world-class software products using market
-                        leading cutting edge Technologies...
-                      </p>
-                          <div class=social_media_icon>
-                            <a class="btn" href="https://www.linkedin.com/in/rahul-sundararaj-016536214/" target=_blank>
-                              <i class="fab fa-linkedin" aria-hidden="true"></i>
-                            </a>
-                            <a class="btn" href="https://github.com/Dev-jr-8" target=_blank>
-                              <i class="fab fa-github"></i>
-                            </a>
-                          </div>
-                  </div>
-                  <div class="Image-boy col-lg-6"><img class="boy" src="Image/Boy-image.png" alt=""></div>
-              </div>
-          </section>
+                <a href="#home" class="nav_logo"><img src="assets\img\rahul_logo.png" width="120" height="120"></a>
 
-
-          <section id=Whatido>
-            <h1>What I Do ?</h1>
-              <div class = "row feature-1">
-                  <div class="col-lg-6 col-md-6 Feature-first-image ">
-                    <img class = "Feature-svg-image" src="Image/java_dsa.gif" alt="">
-                  </div>
-                  <div class="col-lg-6 col-md-6">
-                    <h1 class= "Feature-Heading" >Problem Solving && Data Structures and Algorithms</h1>
-                    <ul class = "dev-icon">
-                      <li><img class = "java" src="https://1000logos.net/wp-content/uploads/2020/09/Java-Logo.png" alt="java" width="133" height="90"></li>
-                      <li><img class="dsa" src="https://miro.medium.com/max/1400/0*UVG1F-0kLAEWAT3k" alt="dsa" width="140" height="100"></li>
+                <div class="nav_menu" id="nav-menu">
+                    <ul class="nav_list">
+                        <li class="nav-item">
+                            <a href="#home" class="nav_link active_link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav_link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#skills" class="nav_link">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#qual" class="nav_link">Qualifications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#services" class="nav_link">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#achieve" class="nav_link">Achievements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav_link">Contact Me</a>
+                        </li>
                     </ul>
-                    <div class = "Data-Analytic">
-                      <p class ="Features-paragraph">
-                         💥 Having Interest in Problem Solving like Data Structures and Algorithms using
-                        Java, Solved more than 350+ Problems on leading Platforms, checkout on Education.</p>
-                      <p  class ="Features-paragraph">
-                         💥 Developed a MERN based Fully Interactive E-commerce website, checkout on Projects tab.</p>
+
+                    <div class="nav_close" id="nav-close">
+                        <i class="uil uil-times nav_close" id="nav-close"></i>
+                    </div>
+                </div>
+
+                <div class="nav_btns">
+                    <!--===== THEME CHANGE BUTTON =====-->
+                    <i class="uil uil-moon change_theme" id="theme-button"></i>
+
+                    <div class="nav_toogle" id="nav-toggle">
+                        <i class="uil uil-bars"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home_container container grid">
+                    <div class="home_img">
+                        <img src="assets/img/home.png" alt="">
+                    </div>
+
+                    <div class="home_data">
+                        <h1 class="home_title">Hi, I'am Rahul Sundararaj</h1>
+                        <h3 class="home_subtitle">Computer Science Engineer</h3>
+                        <p class="home_description">
+                            Enthusiastic about exploring and Mastering new Technologies
+                        </p>
+                        <a href="#contact" class="button button--flex">
+                            Contact Me <i class="uil uil-message button__icon"></i>
+                        </a>
+                        <div class="home_scroll">
+                            <a href="#about" class="home_scroll-button button--flex"></a>
+                            <i class="uil uil-mouse-alt home_scroll-mouse"></i>
+                            <span class="home_scroll-name">Scroll down</span>
+                            <i class="uil uil-arrow-down home_scroll-arrow"></i>
+                        </div>
+                        <div class="home_social">
+                            <span class="home_social-follow">Follow Me</span>
+                            <div class="home_social-links">
+                                <a href="https://www.linkedin.com/in/rahul-sundararaj/" target="_blank" class="home_social-icon">
+                                    <i class="uil uil-linkedin-alt"></i>
+                                </a>
+                                <a href="https://github.com/Dev-jr-8" target="_blank" class="home_social-icon">
+                                    <i class="uil uil-github-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="home_scroll_social">
+
+                            <div class="home_social1">
+                                <div class="home_social-link">
+                                    <a href="https://www.linkedin.com/in/rahul-sundararaj/" target="_blank" class="home_social-icon">
+                                        <i class="uil uil-linkedin-alt"></i>
+                                    </a>
+                                    <a href="https://github.com/Dev-jr-8" target="_blank" class="home_social-icon">
+                                        <i class="uil uil-github-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+               <h2 class="section__title">Executive Summary</h2>
+               <span class="section__subtitle">Introduction</span>
+
+               <div class="about_container container grid">
+                 <img src="assets/img/about-img.png" alt="" class="about_img">
+
+                 <div class="about_data">
+                    <p class="about_description">
+                        Eager undergraduate student with a passion for learning and growth in the tech industry. Always seeking new challenges and opportunities to expand knowledge and skills. Believes adaptability and determination, combined with an eagerness to learn, make a valuable asset to any organization</p>
+                    <div class="about_info">
+                        <div>
+                            <span class="about_info-name">Solved<br></span>
+                            <span class="about_info-title">400+</span>
+                            <span class="about_info-name">Problems<br>in<br>Leading<br>Coding Platforms</span>
+                        </div>
+                        <div>
+                            <span class="about_info-name">Developed<br></span>
+                            <span class="about_info-title">E-Commerce</span>
+                            <span class="about_info-name">Website<br> based<br>on<br> MERN Stack</span>
+                        </div>
+                    </div>
+                    <div class="about_buttons">
+                        <a href="RAHUL S - CSE.pdf" class="button button--flex" target="_blank">
+                            Download CV <i class="uil uil-download-alt button_icon"></i>
+                        </a>
+                    </div>
+                 </div>
+               </div>
+            </section>
+
+            <!--==================== SKILLS ====================-->
+            <section class="skills section" id="skills">
+              <h2 class="section__title">Technical Skills</h2>
+              <span class="section__subtitle">Transforming Complex Problems into Elegant Solutions through Technical Mastery</span>
+
+              <div class="skills_container container grid">
+                <div>
+                    <!--=========== SKILL 1 ============-->
+                    <div class="skills_content skills_open">
+                        <div class="skills_header">
+                            <i class="uil uil-server-network skills_icon"></i>
+
+                            <div>
+                                <h1 class="skills_title">Primary Skills</h1>
+                                
+                            </div>
+
+                            <i class="uil uil-angle-down skills_arrow"></i>
+                        </div>
+                        <div class="skills_list grid">
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Core Java</h3>
+                                    <span class="skills_number">80%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_corejava"></span>
+                                </div>
+                            </div>
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">C</h3>
+                                    <span class="skills_number">70%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_c"></span>
+                                </div>
+                            </div>
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Object Oriented Programming</h3>
+                                    <span class="skills_number">70%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_oop"></span>
+                                </div>
+                            </div>
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Data Structures and Algorithms</h3>
+                                    <span class="skills_number">60%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_dsa"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--=========== SKILL 2 ============-->
+                    <div class="skills_content skills_open">
+                        <div class="skills_header">
+                            <i class="uil uil-brackets-curly skills_icon"></i>
+
+                            <div>
+                                <h1 class="skills_title">Secondary Skills</h1>
+                            </div>
+
+                            <i class="uil uil-angle-down skills_arrow"></i>
+                        </div>
+                        <div class="skills_list grid">
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">HTML</h3>
+                                    <span class="skills_number">60%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_html"></span>
+                                </div>
+                            </div>
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">CSS</h3>
+                                    <span class="skills_number">40%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_css"></span>
+                                </div>
+                            </div>
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Node js</h3>
+                                    <span class="skills_number">20%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_node"></span>
+                                </div>
+                            </div>
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">React js</h3>
+                                    <span class="skills_number">20%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_react"></span>
+                                </div>
+                            </div>
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Mongo DB</h3>
+                                    <span class="skills_number">20%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_mongo"></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
               </div>
-              <div class="row feature-2">
-                <div class="col-lg-6 col-md-6 feature-web">
-                  <h1 class="Feature-Heading">Stunning Spark</h1>
-                  <div class = "Data-Analytic">
-                    <p class ="Features-paragraph">
-                       💥 Building Fully responsive E-commerce website using HTML, CSS, Bootstrap and Javascript.</p>
-                    <p  class ="Features-paragraph">
-                       💥 As of now I have only basic knowledge of Stunning Spark, but in near future I will add more features to myself and excited to explore React , NodeJS and many more.</p>
-                      <p  class ="Features-paragraph">
-                       💥 I have also used Abode Photoshop, Illustrator and Canva to design User interface of websites and mobile application and design of logos.</p>
-                      </div>
-                </div>
-                <div class="col-lg-6 col-md-6 Feature-second-image ">
-                  <img class = "Feature-svg-image" src="Image/stunning_spark_1_.gif" alt="">
-                </div>
-              </div>
-              <div class="row feature-3">
-                <div class = "col-lg-6 col-md-6 Feature-third-image">
-                    <img class = "Feature-svg-image-3" src="Image/Coding.svg" alt="">
-                  </div>
-                  <div class="col-lg-6 col-md-6 feature-coding">
-                    <h1 class="Feature-Heading">Competitive Programming</h1>
-                    <div class="col-lg-6 col-md Coding">
+            </section>
 
-                      <ul class="competitive_icon">
-                          <a href="https://leetcode.com/devhereforcoding/" target="blank"><img  src="https://cdn.icon-icons.com/icons2/2389/PNG/512/leetcode_logo_icon_145113.png" alt="Dev_jr@leetcode" width="50" /></a>
-                          
-                          <a href="https://auth.geeksforgeeks.org/user/devherefosl3p/practice" target="blank"><img  src="https://img.icons8.com/color/480/GeeksforGeeks.png" alt="Dev_jr@GFGPractice" width="50" /></a>
-                          
-                          <a href="https://www.hackerrank.com/dev_jr_8" target="blank"><img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/HackerRank_Icon-1000px.png/800px-HackerRank_Icon-1000px.png" alt="Dev_jr@HackerRank" width="50" /></a>
-                          
-                          <a href="https://www.codechef.com/users/dev_jr" target="blank"><img  src="https://avatars.githubusercontent.com/u/11960354?v=4" alt="Dev_jr@Codechef" width="50" /></a>
-                          
-                          <a href="https://www.codewars.com/users/Dev-jr-8" target="blank"><img  src="https://docs.codewars.com/logo.svg" alt="Dev_jr@Codewars" width="45" /></a>
-                      </ul>
-                  </div>
-                    <div class = "Data-Analytic">
-                      <p class ="Features-paragraph">
-                         💥 I have Solved Problems Including data Structure like Hash Tables, Trees, Tries, Graphs, and various algorithms for solving various problems efficiently.</p>
-                      <p  class ="Features-paragraph">
-                         💥 As I know Data Structure and Algorithms are the heart of programming, So I loves to solve programming question in different competitive website like leetcode, GeeksforGeeks, codeforce, Codewars, codechef, hackerrank and many more.</p>
+            <!--==================== QUALIFICATION ====================-->
+            <section class="qualification section" id="qual">
+              <h2 class="section__title">Qualifications</h2>
+              <span class="section__subtitle">Fueling career success with a foundation of knowledge and expertise</span>
+
+              <div class="qualification_container container">
+                <div class="qualification_tabs">
+                    <div class="qualificaction_button button--flex qualification_active" data-target="#education">
+                      <i class="uil uil-graduation-cap qualification_icon"></i>
+                      Educational Qualifications
+                    </div>
+                </div>
+
+                <div class="qualification_sections">
+                    <!--========== QUALIFICATION CONTENT 1 ==========-->
+                    <div class="qualification_content qualification_active" data-content id="education">
+                      <!--============= QUALIFICATION 1 ===========-->  
+                      <div class="qualification_data">
+                        <div>
+                            <h3 class="qualification_title">Computer Science And Engineering</h3>
+                            <a href="https://www.bitsathy.ac.in/" 
+                            target="_blank"><span class="qualification_subtitle">Bannari Amman Institute of Technology</span></a>
+                            <hr>
+                            <span class="qualification_subtitle">CGPA : 8.71</span>
+                            <div class="qualificaation_calender">
+                                <i class="uil uil-calender-alt"></i>
+                                2020 - 2024
+                            </div>
                         </div>
-                  </div>
+                        <div>
+                            <span class="qualification_rounder"></span>
+                            <span class="qualification_line"></span>
+                        </div>
+                      </div>
+                      <!--============= QUALIFICATION 2 ===========-->  
+                      <div class="qualification_data">
+                        <div></div>
+
+                        <div>
+                            <span class="qualification_rounder"></span>
+                            <span class="qualification_line"></span>
+                        </div>
+
+                        <div>
+                            <h3 class="qualification_title">HSC</h3>
+                            <span class="qualification_subtitle">MS Vidyalaya</span>
+                            <hr>
+                            <span class="qualification_subtitle">Percentage: 63.8 %</span>
+                            <div class="qualificaation_calender">
+                                <i class="uil uil-calender-alt"></i>
+                                2019 - 2020
+                            </div>
+                        </div>
+                        
+                      </div>
+                      <!--============= QUALIFICATION 3 ===========-->  
+                      <div class="qualification_data">
+                        <div>
+                            <h3 class="qualification_title">SSLC</h3>
+                            <a href="https://www.google.com/local/place/fid/0x3a5267ceda296c61:0xd8b38db5cc047627/photosphere?iu=https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid%3DTZoApF3FeEA3XlzclULrmg%26cb_client%3Dlu.gallery.gps%26w%3D160%26h%3D106%26yaw%3D85.05403%26pitch%3D0%26thumbfov%3D100&ik=CAISFlRab0FwRjNGZUVBM1hsemNsVUxybWc%3D" 
+                            target="_blank"><span class="qualification_subtitle">Sri Venugopal Vidyalaya</span></a>
+                            <hr>
+                            <span class="qualification_subtitle">Percentage: 82.8 %</span>
+                            <div class="qualificaation_calender">
+                                <i class="uil uil-calender-alt"></i>
+                                2017 - 2018
+                            </div>
+                        </div>
+                        <div>
+                            <span class="qualification_rounder"></span>
+                            <span class="qualification_line"></span>
+                        </div>
+                      </div>
+                    </div>
+                </div>
               </div>
-               
+            </section>
+
+            <!--==================== projects ====================-->
+            <section class="services section" id="services">
+              <h2 class="section__title">Projects</h2> 
+              <span class="section__subtitle">Innovative projects for a better tomorrow: Exploring new possibilities with creativity and determination.</span> 
+
+              <div class="services_container container grid">
+                <!--============== SERVICES 1 =============-->
+                <div class="services_content">
+                    <div>
+                        <img src="assets\img\Stunning_Spark_logo.png" width="100px" height="100px" style="margin-bottom: 40px; margin-left: 30px;">
+                        <h3 class="services_title">Stunning Spark</h3>
+                    </div>
+                    <span class="button button--flex button--small button--link services_button">
+                        More Details
+                        <i class="uil uil-arrow-right button_icon"></i>
+                    </span>
+
+                    <div class="services_modal ">
+                        <div class="services_modal-content">
+                            <h4 class="services_modal-title"><strong>Stunning Spark</strong> is an e-commerce website that is built using MERN Stack</h4>
+                            <i class="uil uil-times services_modal-close"></i>
+
+                            <ul class="services_modal-services grid">
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p><strong>Product Search :</strong> <br> The website includes a powerful search function that allows users to easily find the products they are looking for. The search function is fast and accurate and provides users with relevant results based on their search terms</p>
+                                </li>
+
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p><strong>Product Review and Ratings :</strong> <br> Users can leave reviews and ratings for products, providing valuable feedback for other customers and helping them make informed purchasing decisions</p>
+                                </li>
+
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p><strong>User Profile with Order Details :</strong> <br> The website includes a user profile feature, which allows users to view and manage their orders. This feature provides users with a convenient and centralized location for all of their order information</p>
+                                </li>
+
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p><strong>Admin Product Management :</strong> <br>The website includes an admin dashboard that allows the website owners to manage products and product information. This includes adding new products, editing existing products, and removing products that are no longer available</p>
+                                </li>
+
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p><strong>Realistic Checkout Process :</strong> <br>The checkout process on Stunning Spark is realistic and straightforward. Users can easily add items to their cart, view their order details, and complete their purchase using the integrated PayPal payment system(Sandbox)</p>
+                                </li>
+
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p><strong>PayPal Payment Integration :</strong> <br> Stunning Spark includes seamless integration with the PayPal payment system(SandBox), allowing users to easily and securely complete their purchases</p>
+                                </li>
+
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p><strong>Live Demo :</strong><br> Click here to jump into the world of E-Commerce <a href="https://stunning-spark.onrender.com/" target="_blank">Stunning Spark</a></p>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--============== Expense Tracker=============-->
+
+                <div class="services_content">
+                    <div>
+                        <img src="https://play-lh.googleusercontent.com/1iukd3WQv6HTWfLQeWiXlqgYaCG89LVy7jLI7lB1LWv0gdV42WMKLRhMPY1OR-2egI8" width="100px" height="100px" style="margin-bottom: 40px; margin-left: 30px;">
+                        <h3 class="services_title">Expense<br>Tracker</h3>
+                    </div>
+                    <span class="button button--flex button--small button--link services_button">
+                        More Details
+                        <i class="uil uil-arrow-right button_icon"></i>
+                    </span>
+
+                    <div class="services_modal">
+                        <div class="services_modal-content">
+                            <h4 class="services_modal-title">Expense Tracker</h4>
+                            <i class="uil uil-times services_modal-close"></i>
+
+                            <ul class="services_modal-services grid">
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p>The app provides users with a simple and intuitive interface to track their expenses</p>
+                                </li>
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p>The app uses MongoDB for data storage, Express.js for server-side development, React.js for the client-side interface, and Node.js for the backend</p>
+                                </li>
+
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p><strong>Spare your time and take a glance to my Repository :</strong> <a href="https://github.com/Dev-jr-8/Expense_Tracker" target="_blank">Expense Tracker</a></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- weather API -->
+                <div class="services_content">
+                    <div>
+                        <img src="https://www.freeiconspng.com/thumbs/weather-icon-png/weather-icon-png-2.png" width="100px" height="100px" style="margin-bottom: 40px; margin-left: 30px;">
+                        <h3 class="services_title">Weather<br>API</h3>
+                    </div>
+                    <span class="button button--flex button--small button--link services_button">
+                        More Details
+                        <i class="uil uil-arrow-right button_icon"></i>
+                    </span>
+
+                    <div class="services_modal">
+                        <div class="services_modal-content">
+                            <h4 class="services_modal-title">Python Weather API</h4>
+                            <i class="uil uil-times services_modal-close"></i>
+
+                            <ul class="services_modal-services grid">
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p>A Simple Application, Which Shows Complete forecast Details based on user's Input Location!</p>
+                                </li>
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p><strong>Tech Stack Used :</strong><br> Python, Tkinter GUI</p>
+                                </li>
+
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p><strong>Spare your time and take a glance to my Repository :</strong><a href="https://github.com/Dev-jr-8/Weather-api" target="_blank">Weather API</a></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!--==================== Achievements ====================-->
+            <section class="skills section" id="achieve">
+                <h2 class="section__title">Achievements</h2>
+                <span class="section__subtitle">Transforming Complex Problems into Elegant Solutions through Technical Mastery</span>
+  
+                <div class="skills_container container grid">
+                  <div>
+                      <!--=========== codechef BIT Exclusive ============-->
+                      <div class="skills_content skills_open">
+                        <div class="skills_header">
+                            <i class="uil uil-brackets-curly skills_icon"></i>
+
+                            <div>
+                                <h1 class="skills_title">Codechef exclusive college program</h1>
+                            </div>
+                            <i class="uil uil-angle-down skills_arrow"></i>
+                        </div>
+                        <div class="skills_list grid">
+                            <ul class="about_description">
+                                <li>Secured <strong>1<sup>st</sup></strong> Rank in <a href="https://www.codechef.com/" target="_blank">Codechef</a> exclusive college program for <strong>Bannari Amman Institute of Technology</strong></li>
+                                <li>It was 11 Weeks Coding Program, where over 1000+ Pre-final year Students were participated.</li>
+                            </ul>
+                        </div>
+                    </div>
+                      <!--=========== codechef 222d ============-->
+                      <div class="skills_content skills_open">
+                        <div class="skills_header">
+                            <i class="uil uil-brackets-curly skills_icon"></i>
+
+                            <div>
+                                <h1 class="skills_title">Codechef March222D</h1>
+                            </div>
+                            <i class="uil uil-angle-down skills_arrow"></i>
+                        </div>
+                        <div class="skills_list grid">
+                            <ul class="about_description">
+                                <li>Secured <strong>11<sup>th</sup></strong> Rank in <a href="https://www.codechef.com/" target="_blank">Codechef's</a><strong> March 222D</strong> Contest.</li>
+                                <li>It was 3 days long Coding Challenge which comprises 8 coding problems, in which I was able to solve 6 problems.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--=========== Edyst Daily coding ============-->
+                    <div class="skills_content skills_open">
+                        <div class="skills_header">
+                            <i class="uil uil-brackets-curly skills_icon"></i>
+
+                            <div>
+                                <h1 class="skills_title">Edyst Coding Challenge</h1>
+                            </div>
+                            <i class="uil uil-angle-down skills_arrow"></i>
+                        </div>
+                        <div class="skills_list grid">
+                            <ul class="about_description">
+                                <li>Secured <strong>15<sup>th</sup></strong> Rank in <a href="https://edyst.com/" target="_blank">Edyst's </a>Daily Coding Challenge</li>
+                                <li>It was 3 days long Coding Challenge, where we should solve 2 Problems per day.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--=========== Github ============-->
+                    <div class="skills_content skills_open">
+                        <div class="skills_header">
+                            <i class="uil uil-brackets-curly skills_icon"></i>
+
+                            <div>
+                                <h1 class="skills_title">Pull Shark && Starstruck</h1>
+                            </div>
+                            <i class="uil uil-angle-down skills_arrow"></i>
+                        </div>
+                        <div class="skills_list grid">
+                            <ul class="about_description">
+                                <li>Earned <strong>Pull Shark</strong> badge on <a href="https://github.com/Dev-jr-8" target="_blank">Github</a> for Contributing to Open Source Repository</li>
+                                <li>Earned <strong>Starstruck</strong> badge on <a href="https://github.com/Dev-jr-8" target="_blank">Github</a> for earning <strong>20</strong> stars for <a href="https://github.com/Dev-jr-8/stunning-spark" target="
+                                    ">Stunning Spark</a> Repository</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--=========== leetcode year 2022 ============-->
+                    <div class="skills_content skills_open">
+                        <div class="skills_header">
+                            <i class="uil uil-brackets-curly skills_icon"></i>
+
+                            <div>
+                                <h1 class="skills_title">LeetCode 2k22</h1>
+                            </div>
+                            <i class="uil uil-angle-down skills_arrow"></i>
+                        </div>
+                        <div class="skills_list grid">
+                            <ul class="about_description">
+                                <li>Earned <strong>50<sup>days</sup></strong><a href="https://leetcode.com/devhereforcoding/" target="_blank"> leetcode badge</a> for the year <strong>2022</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--=========== gfg 17th rank ============-->
+                    <div class="skills_content skills_open">
+                        <div class="skills_header">
+                            <i class="uil uil-brackets-curly skills_icon"></i>
+
+                            <div>
+                                <h1 class="skills_title">GeeksforGeeks</h1>
+                            </div>
+                            <i class="uil uil-angle-down skills_arrow"></i>
+                        </div>
+                        <div class="skills_list grid">
+                            <ul class="about_description">
+                                <li>Currently holding <strong>17<sup>th</sup></strong> Rank in <a href="https://auth.geeksforgeeks.org/user/devherefosl3p/practice" target="_blank">GeeksforGeeks Practice</a> Website </li>
+                                <li>The Rank list comprises of Institute's almost every year batches, including 2500+ Students</li>
+                            </ul>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+            <!--==================== PORTFOLIO ====================-->
+            <section class="portfolio section" id="portfolio">
+              <h2 class="section__title">My Profiles</h2>  
+              <span class="section__subtitle">Most recent work</span>
+
+              <div class="portfolio_container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!--============ leetcode==============-->
+                    <div class="portfolio_content grid swiper-slide">
+                        <img src="https://leetcode.com/static/images/LeetCode_Sharing.png" alt="" class="portfolio_img">
+
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title">LeetCode</h3>
+                            <p class="portfolio_description">
+                                Unlocking Algorithmic Excellence on LeetCode, Check out my profile for proof !
+                            </p>
+                            <a href="https://leetcode.com/devhereforcoding/" class="button button--flex button--small portfolio_button" target="_blank">
+                                Profile 
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--============gfg ==============-->
+                    <div class="portfolio_content grid swiper-slide">
+                        <img src="assets\img\portfolio1.jpeg" alt="" class="portfolio_img">
+
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title">GeeksforGeeks Practice</h3>
+                            <p class="portfolio_description">
+                                Practice makes perfect, and GeeksforGeeks is here to help you achieve it!
+                            </p>
+                            <a href="https://auth.geeksforgeeks.org/user/devherefosl3p/practice" class="button button--flex button--small portfolio_button" target="_blank">
+                                Profile 
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--============ codewars ==============-->
+                    <div class="portfolio_content grid swiper-slide">
+                        <img src="https://uploads-ssl.webflow.com/62e3ee10882dc50bcae8d07a/634816d46fc4a32b2a583416_codewars-og-image.png" alt="" class="portfolio_img">
+
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title">Codewars</h3>
+                            <p class="portfolio_description">
+                               Achieve mastery through challenge!
+                            </p>
+                            <a href="https://www.codewars.com/users/Dev-jr-8" class="button button--flex button--small portfolio_button" target="_blank">
+                                Profile 
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    
+                    <!--============ git ==============-->
+                    <div class="portfolio_content grid swiper-slide">
+                        <img src="https://media.wired.com/photos/593371c12a38e4432c4b96cc/3:2/w_1600%2Cc_limit/socialite1.jpg" alt="" class="portfolio_img">
+
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title">Github</h3>
+                            <p class="portfolio_description">
+                                I'm a passionate developer on a mission to create impactful solutions through github
+                            </p>
+                            <a href="https://github.com/Dev-jr-8" class="button button--flex button--small portfolio_button" target="_blank">
+                                Profile 
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--============ hackerrrank ==============-->
+                    <div class="portfolio_content grid swiper-slide">
+                        <img src="https://entrackr.com/storage/2018/02/hackerrank-image-1200x600.jpg" alt="" class="portfolio_img">
+
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title">hackerrank</h3>
+                            <p class="portfolio_description">
+                                Learn, Practice, Compete, and Get Hired!
+                            </p>
+                            <a href="https://www.hackerrank.com/dev_jr_8" class="button button--flex button--small portfolio_button" target="_blank">
+                                Profile 
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--============ interview Bit ==============-->
+                    <div class="portfolio_content grid swiper-slide">
+                        <img src="https://static.startuptalky.com/2021/04/interviewbit-logo-startuptalky.jpg" alt="" class="portfolio_img">
+
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title">Interview Bit</h3>
+                            <p class="portfolio_description">
+                                Ace your coding interviews and land your dream job!
+                            </p>
+                            <a href="https://www.interviewbit.com/profile/dev-jr" class="button button--flex button--small portfolio_button" target="_blank">
+                                Profile 
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Add Arrow-->
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                </div>
+                <!--Add Pagination-->
+                <div class="swiper-pagination"></div>
+              </div>
+            </section>
+
+            
+
+
+            <!--==================== CONTACT ME ====================-->
+            <section class="contact section" id="contact">
+              <h2 class="section__title">Contact Me</h2>
+              <span class="section__subtitle">Let's connect and collaborate to bring your ideas to life!</span>
+
+              <div class="contact_container container grid">
+                <div>
+                    <div class="contact_information">
+                        <i class="uil uil-phone contact_icon"></i>
+
+                        <div>
+                            <h3 class="contact_title">Call Me</h3>
+                            <span class="contact_subtitle">+91 82487 40231</span>
+                        </div>
+                    </div>
+                    <div class="contact_information">
+                        <i class="uil uil-envelope contact_icon"></i>
+
+                        <div>
+                            <h3 class="contact_title">Email</h3>
+                            <span class="contact_subtitle"><a href="mailto:rahul.cs20@bitsathy.ac.in">rahul.cs20@bitsathy.ac.in</a><br><a href="mailto:devhereforcoding@gmail.com">devhereforcoding@gmail.com</a></span>
+                        </div>
+                    </div>
+                    <div class="contact_information">
+                        <i class="uil uil-map-marker contact_icon"></i>
+
+                        <div>
+                            <h3 class="contact_title">Location</h3>
+                            <span class="contact_subtitle">Coimbatore - India</span>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+          <div class="footer_bg">
+            <div class="footer_container container grid">
+                <div>
+                    <h1 class="footer_title">RAHUL SUNDARARAJ</h1>
+                    <span class="footer_subtitle"><strong>Computer Science Engineer</strong></span>
+                    <hr>
+                    <p class="footer_subtitle">
+                        Enthusiastic about exploring and Mastering new Technologies
+                    </p>
+                </div>
+                <ul class="footer_links">
+                    <li>
+                        <a href="#about" class="footer_link">About</a>
+                    </li>
+                    <li>
+                        <a href="#services" class="footer_link">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer_link">Profiles</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer_link">Contact</a>
+                    </li>
+                </ul>
+                <div class="footer_socails">
+                    <a href="https://www.linkedin.com/in/rahul-sundararaj/" target="_blank" class="footer_social">
+                        <i class="uil uil-linkedin"></i>
+                    </a>
+
+                    <a href="https://github.com/Dev-jr-8" target="_blank" class="footer_social">
+                        <i class="uil uil-github"></i>
+                    </a>
+                    <!-- <a href="#" target="_blank" class="footer_social">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                    <a href="#" class="footer_social">
+                        <i class="uil uil-twitter-alt"></i>
+                    </a> -->
+                </div>
+                <p style="text-align: center;">Made with ❤️ by Rahul Sundararaj</p>
+        </footer>
         
-          </section>
-    <footer class=footer>Made with ❤️ by Rahul Sundararaj</footer>
-</body>
+        <!--==================== SCROLL TOP ====================-->
+        <a href="#" class="scrollup" id="scroll-up">
+          <i class="uil uil-arrow-up scrollup_icon"></i>
+        </a>
+
+        <!--==================== SWIPER JS ====================-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
