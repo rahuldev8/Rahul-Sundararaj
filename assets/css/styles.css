@@ -675,9 +675,11 @@ img {
 }
 
 .services_content{
-  position: relative;
+  height:370px;
+  width:220px;
   background-color: var(--container-color);
-  padding: 3.5rem .5rem 1.25rem 1.5rem;
+  padding-top: 70px;
+
   border-radius: .25rem;
   box-shadow: 0 2px 4px rbba(0,0,0,.15);
   transition: .3s;
@@ -696,6 +698,7 @@ img {
 }
 
 .services_title{
+  align-items: center;
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-1);
   font-weight: var(--font-medium);
@@ -1227,7 +1230,7 @@ img {
   }
 
   .section{
-    padding: 6rem 0 2rem;
+    padding: 4rem 0 2rem;
   }
 
   .section__subtitle{
@@ -1464,6 +1467,11 @@ img {
   position: absolute;
   padding-left: 75%;
   zoom: 240%;
+}
+
+.links{
+  color: red;
+  font-style: italic;
 }
 
 
