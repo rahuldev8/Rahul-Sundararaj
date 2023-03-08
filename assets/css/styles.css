@@ -560,6 +560,10 @@ img {
 .skills_oop{
   width: 70%;
 }
+
+.skills_ps{
+  width: 75%;
+}
 .skills_corejava{
   width: 80%;
 }
@@ -630,10 +634,53 @@ img {
   font-weight: var(--font-medium);
 }
 
+.achive_links{
+  color:rgb(224, 2, 2);
+}
+
 .qualification_subtitle{
+  color: rgb(0, 208, 0);
   display: inline-block;
   font-size: var(--small-font-size);
   margin-bottom: var(--mb-1);
+}
+
+.qualification_subtitle_no{
+  color: #6e57e0;
+  display: inline-block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+.qualification_cgpa{
+  color: red;
+  display: inline-block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 
 .qualification_calendar{
@@ -698,14 +745,15 @@ img {
 }
 
 .services_title{
-  align-items: center;
+  margin-top: 0.7rem;
   font-size: var(--h3-font-size);
-  margin-bottom: var(--mb-1);
+  margin-bottom: 3rem;
   font-weight: var(--font-medium);
 }
 
 .services_button:hover .button_icon{
-  transform: translateX(.25rem)
+  transform: translateX(.25rem);
+  padding-left: 2.5rem;
 }
 
 .services_modal{
@@ -1083,7 +1131,8 @@ img {
   }
 
   .services_content{
-    padding-right: 3.5rem;
+    margin-left: 0px;
+    margin-bottom: 0px;
   }
 
   .services_modal{
@@ -1464,8 +1513,9 @@ img {
 }
 
 .footer_egg{
+  color:black;
   position: absolute;
-  padding-left: 75%;
+  padding-left: 68%;
   zoom: 240%;
 }
 
