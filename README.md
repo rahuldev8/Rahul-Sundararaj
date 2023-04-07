@@ -4,7 +4,7 @@ My simple portfolio website
 
 ```Java
 import java.util.DevJr;
-class havingFun
+class HavingFun
 {
   public static void main(String[] args)
   { 
