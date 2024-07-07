@@ -191,3 +191,38 @@ themeButton.addEventListener('click', () => {
 })
 
 
+// For pop up toggling
+document.addEventListener("DOMContentLoaded", function() {
+  var popup = document.getElementById('popup');
+  var overlay = document.getElementById('overlay');
+  var closeButton = document.getElementById('closeButton');
+
+  // Function to show the popup
+  function showPopup() {
+      popup.style.display = 'block';
+      overlay.style.display = 'block';
+  }
+
+  // Function to hide the popup
+  function hidePopup() {
+      popup.style.display = 'none';
+      overlay.style.display = 'none';
+  }
+
+  // Check if the popup should be shown on page load (e.g., on page relaunch)
+  var showPopupOnRelaunch = true; // Set this based on your logic
+
+  if (showPopupOnRelaunch) {
+      showPopup();
+  }
+
+  // Close the popup when the close button is clicked
+  closeButton.addEventListener('click', function() {
+      hidePopup();
+  });
+
+  // Optional: Close the popup when clicking outside of it (on the overlay)
+  overlay.addEventListener('click', function() {
+      hidePopup();
+  });
+});

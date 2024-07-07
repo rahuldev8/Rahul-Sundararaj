@@ -2,9 +2,10 @@
     <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link rel="icon" type="image/x-icon" href="assets\img\favicon.ico">
+        <link rel="icon" type="image/x-icon" href="/assets/img//favicon.ico">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/d6263aa68b.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/590465f451.js" crossorigin="anonymous"></script>
         <!--==================== UNICONS ====================-->
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
         
@@ -18,11 +19,21 @@
         <title>Rahul Sundararaj</title>
     </head>
     <body>
+        
+        <!-- Pop up for remainding dark mode! -->
+        <div id="popup" class="popup">
+            <p>Are your eyes not compatible with light mode?<br> Don't worry, I've got you covered &#128519;<br>
+                Click on the </p> '<i class="fa-solid fa-moon"></i>' symbol on top right to comfort your Eyes!<br>
+            <button id="closeButton" class="button button--flex " style="font-size: 1rem; padding: 0.4rem 1rem; margin-top: 0.8rem;">Got it &nbsp;<i class="fa-regular fa-face-smile"></i></button>
+        </div>
+        
+        <div id="overlay" class="popup-overlay"></div>
+
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
 
-                <a href="#home" class="nav_logo"><img src="assets\img\rahul_logo.png" width="120" height="120"></a>
+                <a href="#home" class="nav_logo"><img src="assets\img\rahul_logo.png" width="100" height="30"></a>
 
                 <div class="nav_menu" id="nav-menu">
                     <ul class="nav_list">
@@ -30,7 +41,7 @@
                             <a href="#home" class="nav_link active_link">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#about" class="nav_link">About</a>
+                            <a href="#experience" class="nav_link">Experience</a>
                         </li>
                         <li class="nav-item">
                             <a href="#skills" class="nav_link">Skills</a>
@@ -57,10 +68,6 @@
                 <div class="nav_btns">
                     <!--===== THEME CHANGE BUTTON =====-->
                     <i class="uil uil-moon change_theme" id="theme-button"></i>
-
-                    <div class="nav_toogle" id="nav-toggle">
-                        <i class="uil uil-bars"></i>
-                    </div>
                 </div>
             </nav>
         </header>
@@ -99,7 +106,7 @@
                                     <i class="uil uil-github-alt"></i>
                                 </a>
 
-                                <a href="https://www.instagram.com/dir_rahul/" target="_blank" class="home_social-icon">
+                                <a href="https://www.instagram.com/the_hermes8/" target="_blank" class="home_social-icon">
                                     <i class="uil uil-instagram-alt"></i>
                                 </a>
 
@@ -117,7 +124,7 @@
                                         <i class="uil uil-github-alt"></i>
                                     </a>
 
-                                    <a href="https://www.instagram.com/dir_rahul/" target="_blank" class="home_social-icon">
+                                    <a href="https://www.instagram.com/the_hermes8/" target="_blank" class="home_social-icon">
                                         <i class="uil uil-instagram-alt"></i>
                                     </a>
                                 </div>
@@ -129,22 +136,49 @@
                 </div>
             </section>
 
+            <!-- ================== Experience ======================= -->
+            <section class="about section" id="experience">
+                <h2 class="section__title">Hands-on Experience</h2>
+                <span class="section__subtitle">Exploring World of Technology Through Hands-On Experience</span>
+                
+                <div class="about_container container grid">
+                    <h1 class="skills_title">CDW Corporation <span class="unibold">(January 2024 - May 2024)</span></h1><span class="about_description" style="text-align: right; font-weight: 900;">Intern</span>
+                </div>
+
+                <p class="company_description">
+                    "As an <strong>ACE intern under CDW's flagship program</strong>, I received training in advanced technologies essential for developing full-stack applications. This included expertise in <strong>Core Java, Spring Boot, HTML, CSS, SCSS, Tailwind CSS, JavaScript, jQuery, React JS, Node JS, Express JS, SQL, NoSQL, Git, GitHub</strong>. Concurrently, I contributed to the development of an internal tool named <strong>EduMax</strong>, designed to monitor and enhance employee learning progression."
+                </p>
+                
+             </section>
+
             <!--==================== ABOUT ====================-->
             <section class="about section" id="about">
                <h2 class="section__title">Executive Summary</h2>
                <span class="section__subtitle">Introduction</span>
 
                <div class="about_container container grid">
-                 <img src="assets/img/about-img.png" alt="" class="about_img">
+                <!-- <div class="image_position"> -->
+                    <img src="assets/img/about-img.png" alt="about-img" class="about_img">
+                <!-- </div> -->
+                 
 
                  <div class="about_data">
                     <p class="about_description">
-                        Eager undergraduate student with a passion for learning and growth in the tech industry. Always seeking new challenges and opportunities to expand knowledge and skills. Believes adaptability and determination, combined with an eagerness to learn, make a valuable asset to any organization</p>
+                        An enthusiastic individual with <strong>experience as an Full Stack intern in a product-based company</strong>, passionate about learning and growth in the tech industry. Always seeking new challenges and opportunities to expand knowledge and skills. Believes adaptability and determination, combined with an eagerness to learn, make a valuable asset to any organization.</p>
                     <div class="about_info">
                         <div>
                             <span class="about_info-name">Solved<br></span>
                             <span class="about_info-title">400+</span>
                             <span class="about_info-name">Problems<br>in<br>Leading<br>Coding Platforms</span>
+                        </div>
+                        <div>
+                            <span class="about_info-name">Worked in<br></span>
+                            <span class="about_info-title">EduMax</span>
+                            <span class="about_info-name">
+                                as <strong>Intern</strong><br>
+                                at<br>
+                                <strong><a href="https://www.cdw.com/" target="_blank">CDW <br>Corporation</a></strong>
+                            </span>
                         </div>
                         <div>
                             <span class="about_info-name">Developed<br></span>
@@ -153,7 +187,7 @@
                         </div>
                     </div>
                     <div class="about_buttons">
-                        <a href="https://drive.google.com/file/d/12mINnGNePUqSFf6mvhHOwbyxcXp67Qwy/view?usp=share_link" class="button button--flex" target="_blank">
+                        <a href="https://drive.google.com/file/d/1NB-lxK-mAZLj-lxUmJcwnju5dRnV2DBm/view?usp=sharing" class="button button--flex" target="_blank">
                             Download Resume<i class="uil uil-download-alt button_icon"></i>
                         </a>
                     </div>
@@ -167,7 +201,7 @@
               <span class="section__subtitle">Transforming Complex Problems into Elegant Solutions through Technical Mastery</span>
 
               <div class="skills_container container grid">
-                <div>
+                <!-- <div> -->
                     <!--=========== SKILL 1 ============-->
                     <div class="skills_content skills_open">
                         <div class="skills_header">
@@ -183,7 +217,7 @@
                         <div class="skills_list grid">
                             <div class="skills_data">
                                 <div class="skills_titles">
-                                    <h3 class="skills_name">Core Java</h3>
+                                    <h3 class="skills_name">Core Java <img src="./assets//img/java-icon.png" alt="java logo" class="tech-logo"></h3>
                                     <span class="skills_number">80%</span>
                                 </div>
                                 <div class="skills_bar">
@@ -192,16 +226,16 @@
                             </div>
                             <div class="skills_data">
                                 <div class="skills_titles">
-                                    <h3 class="skills_name">C</h3>
+                                    <h3 class="skills_name">JavaScript <img src="./assets//img/javascript-icon.png" alt="javascript logo" class="tech-logo"></h3>
                                     <span class="skills_number">70%</span>
                                 </div>
                                 <div class="skills_bar">
-                                    <span class="skills_percentage skills_c"></span>
+                                    <span class="skills_percentage skills_js"></span>
                                 </div>
                             </div>
                             <div class="skills_data">
                                 <div class="skills_titles">
-                                    <h3 class="skills_name">Problem Solving Skill</h3>
+                                    <h3 class="skills_name">Problem Solving Skill <img src="./assets//img/ps-icon.png" alt="problem solving logo" style="width: 4%;"></h3>
                                     <span class="skills_number">75%</span>
                                 </div>
                                 <div class="skills_bar">
@@ -210,7 +244,7 @@
                             </div>
                             <div class="skills_data">
                                 <div class="skills_titles">
-                                    <h3 class="skills_name">Object Oriented Programming</h3>
+                                    <h3 class="skills_name">Object Oriented Programming <img src="./assets//img/oop-icon.png" alt="object Oriented logo" class="tech-logo"></h3>
                                     <span class="skills_number">70%</span>
                                 </div>
                                 <div class="skills_bar">
@@ -219,7 +253,7 @@
                             </div>
                             <div class="skills_data">
                                 <div class="skills_titles">
-                                    <h3 class="skills_name">Data Structures and Algorithms</h3>
+                                    <h3 class="skills_name">Data Structures and Algorithms  <img src="./assets//img/dsa-icon.png" alt="dsa logo" class="tech-logo"></h3>
                                     <span class="skills_number">60%</span>
                                 </div>
                                 <div class="skills_bar">
@@ -242,8 +276,8 @@
                         <div class="skills_list grid">
                             <div class="skills_data">
                                 <div class="skills_titles">
-                                    <h3 class="skills_name">HTML</h3>
-                                    <span class="skills_number">60%</span>
+                                    <h3 class="skills_name">HTML <img src="./assets//img/html-icon.png" alt="html logo" style="width: 4%;"></h3>
+                                    <span class="skills_number">70%</span>
                                 </div>
                                 <div class="skills_bar">
                                     <span class="skills_percentage skills_html"></span>
@@ -251,8 +285,8 @@
                             </div>
                             <div class="skills_data">
                                 <div class="skills_titles">
-                                    <h3 class="skills_name">CSS</h3>
-                                    <span class="skills_number">40%</span>
+                                    <h3 class="skills_name">CSS <img src="./assets//img/css-icon.png" alt="object Oriented logo" style="width: 4%;"></h3>
+                                    <span class="skills_number">60%</span>
                                 </div>
                                 <div class="skills_bar">
                                     <span class="skills_percentage skills_css"></span>
@@ -260,8 +294,8 @@
                             </div>
                             <div class="skills_data">
                                 <div class="skills_titles">
-                                    <h3 class="skills_name">Node js</h3>
-                                    <span class="skills_number">20%</span>
+                                    <h3 class="skills_name">Node JS <img src="./assets//img/node-logo.png" alt="node js logo" class="tech-logo"></i></h3>
+                                    <span class="skills_number">50%</span>
                                 </div>
                                 <div class="skills_bar">
                                     <span class="skills_percentage skills_node"></span>
@@ -269,22 +303,71 @@
                             </div>
                             <div class="skills_data">
                                 <div class="skills_titles">
-                                    <h3 class="skills_name">React js</h3>
-                                    <span class="skills_number">20%</span>
+                                    <h3 class="skills_name">React JS <img src="./assets//img/react-icon.png" alt="react js logo" class="tech-logo"></h3>
+                                    <span class="skills_number">50%</span>
                                 </div>
                                 <div class="skills_bar">
                                     <span class="skills_percentage skills_react"></span>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+
+                    <!--=========== Experience IN ============-->
+                    <div class="skills_content skills_open_right">
+                        <div class="skills_header">
+                            <i class="uil uil-brackets-curly skills_icon"></i>
+
+                            <div>
+                                <h1 class="skills_title">Having Experience In</h1>
+                            </div>
+
+                            <i class="uil uil-angle-down skills_arrow"></i>
+                        </div>
+                        <div class="skills_list grid">
                             <div class="skills_data">
                                 <div class="skills_titles">
-                                    <h3 class="skills_name">Mongo DB</h3>
-                                    <span class="skills_number">20%</span>
-                                </div>
-                                <div class="skills_bar">
-                                    <span class="skills_percentage skills_mongo"></span>
+                                    <h3 class="skills_name"><strong>Version Control &nbsp;&nbsp;&nbsp;</strong> 
+                                        Git <img src="./assets//img/Git-logo.png" alt="git logo" class="tech-logo"> | 
+                                        GitHub  <img src="./assets//img/github-logo.png" alt="github logo" class="tech-logo"> | 
+                                        GitLab  <img src="./assets//img/GitLab-icon.png" alt="gitlab logo" class="tech-logo"></h3>
                                 </div>
                             </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name"><strong>IDEs &nbsp;&nbsp;&nbsp;</strong> 
+                                        Eclipse <img src="./assets//img/eclipse-icon.png" alt="Eclipse logo" class="tech-logo"> | 
+                                        VS Code <img src="./assets//img/vsc-icon.png" alt="vs code logo" class="tech-logo"> | 
+                                        STS <img src="./assets//img/sts-icon.jpeg" alt="sts logo" class="tech-logo"></h3>
+                                </div>
+                            </div>
+
+                            <div class="skills_data"> 
+                                <div class="skills_titles">
+                                    <h3 class="skills_name"><strong>Frameworks &nbsp;&nbsp;&nbsp;</strong> 
+                                        Spring Boot <img src="./assets//img/spring-boot.png" alt="spring boot logo" class="tech-logo"> | 
+                                        Node JS <img src="./assets//img/node-logo.png" alt="node js logo" class="tech-logo"> | 
+                                        React JS <img src="./assets//img/react-icon.png" alt="react js logo" class="tech-logo"></h3>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name"><strong>UI/UX &nbsp;&nbsp;&nbsp;</strong> 
+                                        Adobe XD <img src="./assets//img/xd-logo.png" alt="adobe xd logo" class="tech-logo"> | 
+                                        Figma <img src="./assets//img/figma-icon.png" alt="figma logo" class="tech-logo"></h3>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name"><strong> Libraries &nbsp;&nbsp;&nbsp;</strong> 
+                                        Recoil <img src="./assets//img/recoil-icon.jpg" alt="recoil logo" class="tech-logo"> | 
+                                        Tailwind CSS <img src="./assets//img/tailwind-css.png" alt="tailwind css logo" class="tech-logo"></h3>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
 
@@ -302,40 +385,46 @@
                         <div class="skills_list grid">
                             <div class="skills_data">
                                 <div class="skills_titles">
-                                    <h3 class="skills_name"><strong>Version Control &nbsp;&nbsp;&nbsp;</strong> Git | GitHub</h3>
+                                    <h3 class="skills_name"><strong>Languages &nbsp;&nbsp;&nbsp;</strong> 
+                                        Python <img src="./assets//img/python-icons.jpeg" alt="python logo" class="tech-logo"> |  
+                                        SQL <img src="./assets//img/sql-icon.png" alt="sql logo" class="tech-logo"></h3>
                                 </div>
                             </div>
 
                             <div class="skills_data">
                                 <div class="skills_titles">
-                                    <h3 class="skills_name"><strong>IDEs &nbsp;&nbsp;&nbsp;</strong> IntelliJ IDEA | VS Code</h3>
+                                    <h3 class="skills_name"><strong>Adobe &nbsp;&nbsp;&nbsp;</strong> 
+                                        Photoshop <img src="./assets//img/photoshop-icon.png" alt="photoshop logo" class="tech-logo"> | 
+                                        Premiere Pro <img src="./assets//img/premiere-pro-icon.png" alt="premiere pro logo" class="tech-logo"></h3>
                                 </div>
                             </div>
 
                             <div class="skills_data">
                                 <div class="skills_titles">
-                                    <h3 class="skills_name"><strong>Adobe &nbsp;&nbsp;&nbsp;</strong> PhotoShop | Premiere Pro</h3>
+                                    <h3 class="skills_name"><strong>UI/UX &nbsp;&nbsp;&nbsp;</strong> 
+                                        Canva <img src="./assets//img/Canva-icon.png" alt="canva logo" class="tech-logo"></h3>
                                 </div>
                             </div>
 
                             <div class="skills_data">
                                 <div class="skills_titles">
-                                    <h3 class="skills_name"><strong>UI/UX &nbsp;&nbsp;&nbsp;</strong> Canva</h3>
-                                </div>
-                            </div>
-
-                            <div class="skills_data">
-                                <div class="skills_titles">
-                                    <h3 class="skills_name"><strong>3d Modelling &nbsp;&nbsp;&nbsp;</strong> Blender</h3>
+                                    <h3 class="skills_name"><strong>3d Modelling &nbsp;&nbsp;&nbsp;</strong> 
+                                        Blender <img src="./assets//img/blender-icom.png" alt="blender logo" class="tech-logo"></h3>
                                 </div>
                             </div>
                             
-                            
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name"><strong>Others &nbsp;&nbsp;&nbsp;</strong> 
+                                        Design Patterns <img src="./assets//img/design-patterns-icon.png" alt="design patterns logo" class="tech-logo"> | 
+                                        SCSS <img src="./assets//img/scss-logo.png" alt="scss logo" class="tech-logo"></h3>
+                                </div>
+                            </div>
     
                         </div>
                     </div>
 
-                </div>
+                <!-- </div> -->
               </div>
             </section>
 
@@ -352,7 +441,7 @@
                     </div>
                 </div>
 
-                <div class="qualification_sections">
+                <!-- <div class="qualification_sections"> -->
                     <!--========== QUALIFICATION CONTENT 1 ==========-->
                     <div class="qualification_content qualification_active" data-content id="education">
                       <!--============= QUALIFICATION 1 ===========-->  
@@ -362,11 +451,12 @@
                             <a href="https://www.bitsathy.ac.in/" 
                             target="_blank"><span class="qualification_subtitle">Bannari Amman Institute of Technology</span></a>
                             <hr>
-                            <span class="qualification_cgpa">CGPA : 8.71</span>
+                            <span class="qualification_cgpa">CGPA : <strong>8.54 </strong>(First Class with Distinction)</span>
                             <div class="qualificaation_calender">
                                 <i class="uil uil-calender-alt"></i>
                                 2020 - 2024
                             </div>
+                            <p class="institute_info">This is the place where I learnt Core Java, DSA && OOPS, Web Development and developed <a href="https://stunning-spark.onrender.com/">Stunning Spark</a></p>
                         </div>
                         <div>
                             <span class="qualification_rounder"></span>
@@ -383,7 +473,7 @@
                         </div>
 
                         <div>
-                            <h3 class="qualification_title">HSC</h3>
+                            <h3 class="qualification_title">Higher Secondary Certificate</h3>
                             <span class="qualification_subtitle_no">MS Vidyalaya</span>
                             <hr>
                             <span class="qualification_cgpa">Percentage: 63.8 %</span>
@@ -391,14 +481,15 @@
                                 <i class="uil uil-calender-alt"></i>
                                 2019 - 2020
                             </div>
+                            <p class="institute_info">This is the place where I got introduced to Python.</p>
                         </div>
                         
                       </div>
                       <!--============= QUALIFICATION 3 ===========-->  
                       <div class="qualification_data">
                         <div>
-                            <h3 class="qualification_title">SSLC</h3>
-                            <a href="https://www.google.com/local/place/fid/0x3a5267ceda296c61:0xd8b38db5cc047627/photosphere?iu=https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid%3DTZoApF3FeEA3XlzclULrmg%26cb_client%3Dlu.gallery.gps%26w%3D160%26h%3D106%26yaw%3D85.05403%26pitch%3D0%26thumbfov%3D100&ik=CAISFlRab0FwRjNGZUVBM1hsemNsVUxybWc%3D" 
+                            <h3 class="qualification_title">Secondary School Leaving Certificate</h3>
+                            <a href="https://www.google.com/search?q=sri+venugopal+vidyalaya&oq=sri+venugopal+vidyalaya&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg9MgYIAhAuGEDSAQg2MTY2ajBqNKgCALACAQ&sourceid=chrome&ie=UTF-8" 
                             target="_blank"><span class="qualification_subtitle">Sri Venugopal Vidyalaya</span></a>
                             <hr>
                             <span class="qualification_cgpa">Percentage: 82.8 %</span>
@@ -406,6 +497,7 @@
                                 <i class="uil uil-calender-alt"></i>
                                 2017 - 2018
                             </div>
+                            <p class="institute_info">This is the place where I developed an interest in computers and learned HTML, CSS, and Java.</p>
                         </div>
                         <div>
                             <span class="qualification_rounder"></span>
@@ -413,7 +505,7 @@
                         </div>
                       </div>
                     </div>
-                </div>
+                <!-- </div> -->
               </div>
             </section>
 
@@ -423,12 +515,87 @@
               <span class="section__subtitle">Innovative projects for a better tomorrow: Exploring new possibilities with creativity and determination.</span> 
 
               <div class="services_container container grid">
+
+                <div class="services_content">
+                    <div class="image-center">
+                        <img src="./assets//img/edumax-logo.png" width="130px" height="130px">
+                    </div>
+                    <h3 class="services_title">EduMax</h3>
+                    <span class="button button--flex button--small button--link services_button">
+                        More Details
+                        <i class="uil uil-arrow-right button_icon"></i>
+                    </span>
+
+                    <div class="services_modal">
+                        <div class="services_modal-content">
+                            <h4 class="services_modal-title">EduMax</h4>
+                            <i class="uil uil-times services_modal-close"></i>
+
+                            <ul class="services_modal-services grid">
+                                <p>Edumax is an innovative internal tool designed for <a href="https://www.cdw.com/" target="_blank">CDW Corporation</a> to track employee learning progress, schedule reviews, allocate reviewers, and showcase leaderboards for every task!</p>
+
+                                <strong>Features</strong>
+
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p><strong>Exercise Progress Tracking - </strong>Each participant can individually monitor their progress in every curriculum they are enrolled in!</p>
+                                </li>
+
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p><strong>Review Sheduling - </strong> Once participants have completed their learning, it's best to test their knowledge. They can click "Ready for Review," and the application will automatically assign available reviewers.</p>
+                                </li>
+
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p><strong>Realtime update on Exercise Status - </strong> Participants can view their exercise status in real-time, with updates reflecting any changes made by reviewers or admins.</p>
+                                </li>
+
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p><strong>Leaderboard for Curriculums - </strong>Healthy competition is always beneficial. To encourage participants, a leaderboard is available for every curriculum, motivating them to perform better!</p>
+                                </li>
+
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p><strong>SSO (Single Sign-On) - </strong>Integrated single sign-on from another internal product ensures data consistency and provides a hassle-free login experience for users.</p>
+                                </li>
+
+                                <strong>Role && Responsibilities</strong>
+
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p><strong>Designed and Developed Reusable Frontend Components for EduMax Platform.</strong></p>
+                                </li>
+
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p><strong>Integrated frontend components to backend ensure data consistency.</strong></p>
+                                </li>
+
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p><strong>Developed reusable components that are utilized throughout the application.</strong></p>
+                                </li>
+
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p><strong>Implemented key features including search debouncing, comprehensive exercise search capabilities, participant-filtered exercise status.</strong></p>
+                                </li>
+
+                                <p><strong>Tech Stack Used </strong><br> React JS, Node JS, Express JS, Mongo DB, Recoil</p>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
                 <!--============== SERVICES 1 =============-->
                 <div class="services_content">
-                    <div>
+                    <div class="image-center">
                         <img src="assets\img\Stunning_Spark_logo.png" width="130px" height="130px">
-                        <h3 class="services_title">Stunning Spark</h3>
                     </div>
+                    <h3 class="services_title">Stunning Spark</h3>
                     <span class="button button--flex button--small button--link services_button">
                         More Details
                         <i class="uil uil-arrow-right button_icon"></i>
@@ -482,10 +649,10 @@
                 <!--============== Expense Tracker=============-->
 
                 <div class="services_content">
-                    <div>
+                    <div class="image-center">
                         <img src="https://play-lh.googleusercontent.com/1iukd3WQv6HTWfLQeWiXlqgYaCG89LVy7jLI7lB1LWv0gdV42WMKLRhMPY1OR-2egI8" width="130px" height="130px">
-                        <h3 class="services_title">Expense Tracker</h3>
                     </div>
+                    <h3 class="services_title">Expense Tracker</h3>
                     <span class="button button--flex button--small button--link services_button">
                         More Details
                         <i class="uil uil-arrow-right button_icon"></i>
@@ -517,10 +684,10 @@
 
                 <!-- weather API -->
                 <div class="services_content">
-                    <div>
-                        <img src="https://www.freeiconspng.com/thumbs/weather-icon-png/weather-icon-png-2.png" width="130px" height="130px">
-                        <h3 class="services_title">Weather API</h3>
+                    <div class="image-center">
+                        <img src="https://www.freeiconspng.com/thumbs/weather-icon-png/weather-icon-4.png" width="130px" height="130px">
                     </div>
+                    <h3 class="services_title">Weather API</h3>
                     <span class="button button--flex button--small button--link services_button">
                         More Details
                         <i class="uil uil-arrow-right button_icon"></i>
@@ -559,7 +726,7 @@
                 <h2 class="section__title">Achievements</h2>
                 <span class="section__subtitle">Transforming Complex Problems into Elegant Solutions through Technical Mastery</span>
   
-                <div class="skills_container container grid">
+                <div class="container grid">
                   <div>
                       <!--=========== codechef BIT Exclusive ============-->
                       <div class="skills_content skills_open">
@@ -633,19 +800,19 @@
                         </div>
                     </div>
 
-                    <!--=========== leetcode year 2022 ============-->
+                    <!--=========== leetcode year 2022,2023 ============-->
                     <div class="skills_content skills_open">
                         <div class="skills_header">
                             <i class="uil uil-brackets-curly skills_icon"></i>
 
                             <div>
-                                <h1 class="skills_title">LeetCode 2k22</h1>
+                                <h1 class="skills_title">LeetCode 2k22 && 2k23</h1>
                             </div>
                             <i class="uil uil-angle-down skills_arrow"></i>
                         </div>
                         <div class="skills_list grid">
                             <ul class="about_description">
-                                <li>Earned <strong>50<sup>days</sup></strong><a href="https://leetcode.com/rahuldev8/" target="_blank" class="achive_links"> leetcode badge</a> for the year <strong>2022</strong></li>
+                                <li>Earned <strong>50<sup>days</sup></strong><a href="https://leetcode.com/rahuldev8/" target="_blank" class="achive_links"> leetcode badge</a> for the year <strong>2022 and 2023</strong>, A Prestigious <strong>100<sup>days</sup></strong> badge for 2023.</li>
                             </ul>
                         </div>
                     </div>
@@ -668,17 +835,8 @@
                         </div>
                     </div>
                   </div>
-                </div>
+                <!-- </div> -->
               </section>
-
-              
-            <!-- Github Contibution chart -->
-            <h2 class="section__title" style="font-size: 28px;">My Contributions Towards Community❤️</h2> 
-            <br> 
-            <div class="git_chart">
-                
-                <a href="https://github.com/rahuldev8" target="_blank"><img src="https://ghchart.rshah.org/6e57e0/rahuldev8" alt="Rahul's GitHub Contibution Chart" /></a>
-            </div>
 
             <!--==================== PORTFOLIO ====================-->
             <section class="portfolio section" id="portfolio">
@@ -807,20 +965,20 @@
 
               <div class="contact_container container grid">
                 <div>
-                    <!-- <div class="contact_information">
+                    <div class="contact_information">
                         <i class="uil uil-phone contact_icon"></i>
 
                         <div>
                             <h3 class="contact_title">Call Me</h3>
-                            <span class="contact_subtitle"></span>
+                            <span class="contact_subtitle">+91 82487 40231</span>
                         </div>
-                    </div> -->
+                    </div>
                     <div class="contact_information">
                         <i class="uil uil-envelope contact_icon"></i>
 
                         <div>
                             <h3 class="contact_title">Email</h3>
-                            <span class="contact_subtitle"><a href="mailto:rahul.cs20@bitsathy.ac.in">rahul.cs20@bitsathy.ac.in</a><br><a href="mailto:devhereforcoding@gmail.com">devhereforcoding@gmail.com</a></span>
+                            <span class="contact_subtitle"><a href="mailto:devhereforcoding@gmail.com">devhereforcoding@gmail.com</a></span>
                         </div>
                     </div>
                     <div class="contact_information">
@@ -857,16 +1015,16 @@
 
                 <ul class="footer_links">
                     <li>
-                        <a href="#about" class="footer_link">About</a>
+                        <a href="#experience" class="footer_link">Experience</a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="footer_link">Skills</a>
                     </li>
                     <li>
                         <a href="#services" class="footer_link">Projects</a>
                     </li>
                     <li>
                         <a href="#portfolio" class="footer_link">Profiles</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="footer_link">Contact</a>
                     </li>
                 </ul>
                 
@@ -880,7 +1038,7 @@
                         <i class="uil uil-github"></i>
                     </a>
 
-                     <a href="https://www.instagram.com/dir_rahul/" target="_blank" class="footer_social">
+                     <a href="https://www.instagram.com/the_hermes8/" target="_blank" class="footer_social">
                         <i class="uil uil-instagram"></i>
                     </a>
                     <!-- <a href="#" class="footer_social">
