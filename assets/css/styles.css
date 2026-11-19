@@ -456,6 +456,29 @@ img {
   margin-bottom: var(--mb-2-5);
 }
 
+/* Purple bullet points for achievement lists */
+ul.about_description {
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+}
+
+ul.about_description li {
+  position: relative;
+  padding-left: 1rem;
+}
+
+ul.about_description li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.65em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--first-color);
+}
+
 .company_description{
   width: 50%;
   margin: 0 auto;
