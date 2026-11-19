@@ -1794,12 +1794,10 @@ ul.about_description li::before {
     }
 
     .home_img img {
-        width: 100%;
-        height: 100%;
-        max-width: 100%;
-        object-fit: contain;
-        object-position: center bottom;
-        transform: none;
+        position: relative;
+        left: 20px;
+        transform: scale(1.1);
+        transform-origin: bottom center;
     }
 
     .home_data {
@@ -1829,4 +1827,12 @@ ul.about_description li::before {
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    .company_description {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+    list-style: none;
+}
 }
